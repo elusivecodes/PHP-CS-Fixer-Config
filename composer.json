@@ -14,7 +14,7 @@
             "Fyre\\PhpCsFixer\\": "src/"
         }
     },
-    "require-dev": {
+    "require": {
         "friendsofphp/php-cs-fixer": "^3.59"
     },
     "scripts": {

@@ -14,7 +14,7 @@ PHP-CS-Fixer shareable config for the *Fyre* style.
 **Using Composer**
 
 ```
-composer require fyre/php-cs-fixer-config
+composer require --dev fyre/php-cs-fixer-config
 ```
 
 
