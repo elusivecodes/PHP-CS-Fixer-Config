@@ -1,5 +1,5 @@
 {
-    "name": "fyre/php-cs-fixer",
+    "name": "fyre/php-cs-fixer-config",
     "description": "PHP-CS-Fixer shareable config for the Fyre style.",
     "type": "library",
     "license": "MIT",
