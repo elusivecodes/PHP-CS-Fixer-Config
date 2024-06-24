@@ -26,8 +26,12 @@ class Config extends \PhpCsFixer\Config
             'cast_spaces' => true,
             'class_attributes_separation' => [
                 'elements' => [
+                    'case' => 'none',
+                    'const' => 'only_if_meta',
                     'method' => 'one',
-                ]
+                    'property' => 'only_if_meta',
+                    'trait_import' => 'none',
+                ],
             ],
             'class_reference_name_casing' => true,
             'concat_space' => true,
@@ -59,7 +63,29 @@ class Config extends \PhpCsFixer\Config
                 'syntax' => 'union',
             ],
             'ordered_class_elements' => [
-                'order' => ['use_trait', 'case', 'constant_public', 'constant_protected', 'constant_private', 'property_public', 'property_protected', 'property_private', 'construct', 'destruct', 'magic', 'phpunit', 'method_public', 'method_protected', 'method_private'],
+                'order' => [
+                    'use_trait',
+                    'case',
+                    'constant_public',
+                    'constant_protected',
+                    'constant_private',
+                    'property_public_static',
+                    'property_protected_static',
+                    'property_private_static',
+                    'property_public',
+                    'property_protected',
+                    'property_private',
+                    'construct',
+                    'destruct',
+                    'magic',
+                    'method_public_static',
+                    'method_protected_static',
+                    'method_private_static',
+                    'method_public',
+                    'method_protected',
+                    'method_private',
+                    'phpunit',
+                ],
                 'sort_algorithm' => 'alpha',
             ],
             'ordered_imports' => [
@@ -81,10 +107,11 @@ class Config extends \PhpCsFixer\Config
             'space_after_semicolon' => [
                 'remove_in_empty_for_expressions' => true,
             ],
+            'trailing_comma_in_multiline' => true,
             'trim_array_spaces' => true,
             'whitespace_after_comma_in_array' => [
                 'ensure_single_space' => true,
-            ]
+            ],
         ]);
     }
 }
