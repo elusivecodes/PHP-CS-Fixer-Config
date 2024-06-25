@@ -199,9 +199,6 @@ class Config extends \PhpCsFixer\Config
             ],
             'phpdoc_align' => [
                 'align' => 'left',
-                'spacing' => [
-                    'param' => 4,
-                ],
             ],
             'phpdoc_indent' => true,
             'phpdoc_inline_tag_normalizer' => true,
@@ -231,6 +228,7 @@ class Config extends \PhpCsFixer\Config
             ],
             'phpdoc_to_comment' => false,
             'phpdoc_trim' => true,
+            'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types' => true,
             'phpdoc_var_without_name' => true,
             'psr_autoloading' => false,
