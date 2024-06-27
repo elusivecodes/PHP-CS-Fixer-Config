@@ -197,6 +197,9 @@ class Config extends \PhpCsFixer\Config
             'ordered_types' => [
                 'null_adjustment' => 'always_last',
             ],
+            'phpdoc_add_missing_param_annotation' => [
+                'only_untyped' => false,
+            ],
             'phpdoc_align' => [
                 'align' => 'left',
             ],
@@ -230,6 +233,9 @@ class Config extends \PhpCsFixer\Config
             'phpdoc_trim' => true,
             'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types' => true,
+            'phpdoc_types_order' => [
+                'null_adjustment' => 'always_last',
+            ],
             'phpdoc_var_without_name' => true,
             'psr_autoloading' => false,
             'return_type_declaration' => ['space_before' => 'none'],
